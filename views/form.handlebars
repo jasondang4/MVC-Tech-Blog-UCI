@@ -1,0 +1,14 @@
+<form class="postform" action="">
+    <input type="text" name="Title" id="blogtitle">
+    <input type="text" name="Content" id="blogcontent">
+    <button type='submit' value='Submit'>Submit</button>
+</form>
+
+  {{#each posts as |post|}}
+<div>
+    <p>{{post.title}} {{post.content}}</p>
+</div>
+  {{/each}}
+
+
+  <script src="/JS/postLogic.js"></script>
